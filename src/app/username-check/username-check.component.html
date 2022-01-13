@@ -1,0 +1,6 @@
+<section class="usernameCheck">
+    <label>Write username </label>
+    <input type='text' [(ngModel)]='username' />
+    <p class="ptag">{{ username }}</p>
+    <button class="btn btn-primary" [disabled]="username === ''" (click)="onCheckUsername()">reset username</button>
+</section>
